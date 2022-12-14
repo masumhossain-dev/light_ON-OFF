@@ -17,10 +17,13 @@
       <button id="post-btn">Post</button>
    </div>
    <script>
-      let submitBtn = document.getElementById('post-btn').addEventListener('click', function(){
+      let postBtn = document.getElementById('post-btn').addEventListener('click', function(){
          let textBox = document.getElementById('text-box');
          let newComment = textBox.value;
-         
+         let commentContainer = document.getElementById('comment-container');
+         let p = document.createElement('p');
+         p.innerText = newComment;
+         commentContainer.appendChild(p);
       })
    </script>
 </body>
