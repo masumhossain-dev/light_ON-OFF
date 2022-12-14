@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Make a Comment Box</title>
+</head>
+<body>
+   <div id="comment-container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, explicabo quis provident quidem error velit asperiores eos fugit ipsam minima magnam cupiditate odio impedit maxime molestiae quam. Neque, natus in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, explicabo quis provident quidem error velit asperiores eos fugit ipsam minima magnam cupiditate odio impedit maxime molestiae quam. Neque, natus in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, explicabo quis provident quidem error velit asperiores eos fugit ipsam minima magnam cupiditate odio impedit maxime molestiae quam. Neque, natus in.</p>
+   </div>
+   <div>
+      <textarea name="textarea" id="text-box" cols="60" rows="5"></textarea><br>
+      <button id="post-btn">Post</button>
+   </div>
+   <script>
+      let submitBtn = document.getElementById('post-btn').addEventListener('click', function(){
+         let textBox = document.getElementById('text-box');
+         let newComment = textBox.value;
+         
+      })
+   </script>
+</body>
+</html>
